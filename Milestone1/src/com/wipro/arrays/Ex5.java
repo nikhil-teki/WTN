@@ -4,12 +4,12 @@ public class Ex5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n=Integer.parseInt(args[0]);
+		int n=args.length;
 		int[] a=new int[n];
 		int l1=0,l2=0,s1=0,s2=0;
 		for(int i=0;i<n;i++)
 		{
-			a[i]=Integer.parseInt(args[i+1]);
+			a[i]=Integer.parseInt(args[i]);
 			if(i==0)
 			{
 				l1=l2=s1=s2=a[0];
@@ -21,11 +21,15 @@ public class Ex5 {
 					l2=l1;
 					l1=a[i];
 				}
+				else if(l2<a[i]&&a[i]!=l1)
+					l2=a[i];
 				if(s1>a[i])
 				{
 					s2=s1;
 					s1=a[i];
 				}
+				else if(s2>a[i]&&a[i]!=s1)
+					s2=a[i];
 			}
 		}
 		System.out.println("largest 2 numbers : "+l1+" "+l2);
