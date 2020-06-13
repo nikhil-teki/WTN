@@ -4,6 +4,10 @@ public class Ex9 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		if(args.length==0)
+			System.out.println("Please enter the month in numbers");
+		else
+		{
 		int monthno=Integer.parseInt(args[0]);
 		String month;
 		switch(monthno)
@@ -36,6 +40,7 @@ public class Ex9 {
     	        break;
 		}
 		System.out.println(month);
+		}
 	}
 
 }
