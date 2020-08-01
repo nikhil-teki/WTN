@@ -1,0 +1,6 @@
+The Default working directory will be the Project main folder.
+So, to work with files without specifying the path of the file in the program code,
+Change the working directory of the java program to the file folder.
+To change the working directory goto 
+"run configurations" -> "Arguements" -> "Working Directory" -> "Other".
+After your work with the java program is finished,don't forget to change the working Directory back to Default. 
